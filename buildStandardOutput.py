@@ -13,10 +13,10 @@ import pandas as pd
 
 # +
 def load_COMPAS_data(filepath, testing=False):
-    ucb_events_obj = UCB_Events(filepath, testing)
+    ucb_events_obj = COMPAS_UCB_Events(filepath, testing)
     return ucb_events_obj.getEvents()
 
-class UCB_Events(object):
+class COMPAS_UCB_Events(object):
 
     """
     COMPAS has many different output file types, and does not print a chronological set of events.
@@ -111,6 +111,7 @@ class UCB_Events(object):
         
         self.all_UCB_events = df                                        # Convert back from df
         self.update_header()                                            # Update the header with new information
+        self.all_UCB_events.reset_index()
         return self.all_UCB_events
 
     def verifyAndConvertCompasDataToUcbUsingDict(self, compasData, conversionDict):

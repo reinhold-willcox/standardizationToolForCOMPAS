@@ -12,7 +12,7 @@ from buildStandardOutput import load_COMPAS_data
 # Test the functions above
 filepath = './COMPAS_Output/COMPAS_Output.h5'
 def main():
-    return load_COMPAS_data(filepath, testing=True)
+    return load_COMPAS_data(filepath)
 
 
 df = main()
