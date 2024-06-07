@@ -6,8 +6,4 @@
 
 mkdir -p $2
 
-COMPAS --logfile-def LOGFILE.txt --switch-log $(<COMPARGS) --grid $1 -c temp_dir_$2
-mv temp_dir_123/* $2
-rmdir temp_dir_$2
-cp $1 $2/
-
+COMPAS --logfile-def LOGFILE.txt --switch-log $(<COMPARGS) --grid $1 -o /STER/reinhold/ultra_compact_binaries_LISA/$2
