@@ -5,3 +5,4 @@
 --common-envelope-lambda-prescription LAMBDA_FIXED
 --common-envelope-lambda 1
 --common-envelope-alpha 1
+--switch-log
