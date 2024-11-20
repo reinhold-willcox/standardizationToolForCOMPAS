@@ -1,4 +1,7 @@
 troubleshooting
 data
 large_grid_files
+*.log
+*.h5
+*.out
 
