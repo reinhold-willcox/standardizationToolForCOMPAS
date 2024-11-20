@@ -1,0 +1,38 @@
+
+basic: 
+Turn off rotation completely
+There may be spin up from accretion to watch for
+In COSMIC, spins are fixed to zero in each step
+single stellar winds - as in MIST
+wind accretion off — BSE implement**
+AML exchange/binary orbit effects from winds off
+tides off
+no MB — COSMIC implement**, BSE implement**
+Hurley qcrits, Hjellming & Webbink — COMPAS implement**, BSE implement?**
+Hurley+2002 donor mass loss — COMPAS implement**
+thermal limit for mass accretion
+jeans mode mass loss for non-accreted RLO — BSE implement?**
+alpha-lambda; alpha=1, lambda=Pols fits from Claeys+2014 → Note, Claeys+2014 may differ from the BSE implementation -> stick to BSE here
+Set lambda_ion parameter to zero
+Initial eccentricity = 0, Z=0.02, 
+
+basic1b: 
+Same as above, but turn on spins and tides
+Spirit here is to see uncertainties from spins
+We want to be able to track where angular momentum goes, how mass is lost, etc
+Need to fix the initial spins of the stars
+There is a definition in Hurley
+– SeBa included if: tides off, MB off, qcrits, Hurley donor mass loss
+
+intermediate: 
+Bondi-Hoyle winds (wind speed beta = 0.125, alpha=0.8)
+AML exchange/binary orbit effects from winds off
+tides (Hurley+2002) — (SeBa - based on it’s own prescription)
+MB Rappaport + 1983 — COMPAS implement**?
+Zetas (choose these) — COSMIC implement**, SEVN implement**
+timescale-based donor mass loss — COSMIC implement**, SEVN implement**
+thermal limit for mass accretion
+jeans mode mass loss for non-accreted RLO — BSE implement?**
+alpha-lambda; alpha=1, lambda=Pols fits from Claeys+2014 — SeBa implement? 
+Decide on lambda_ion parameter
+
