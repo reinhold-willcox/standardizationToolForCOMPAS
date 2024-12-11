@@ -10,6 +10,6 @@ outdir=/home/reinhold/astro/ultra_compact_binaries_LISA/data/$2/
 echo "$outdir"
 mkdir -p $outdir
 #echo "COMPAS --logfile-def LOGFILE.txt $(<COMPARGS) --grid $1 --output-path $outdir -c $3"
-echo "COMPAS --logfile-def ../LOGFILE.txt $(<COMPARGS) --grid $1 -c $3"
+echo "/home/reinhold/astro/compas/COMPAS_UCBs/src/COMPAS --logfile-def ../LOGFILE.txt $(<COMPARGS) --grid $1 -c $3"
 COMPAS --logfile-def ../LOGFILE.txt $(<COMPARGS) --grid $1 -c $3
 mv $3 $outdir
