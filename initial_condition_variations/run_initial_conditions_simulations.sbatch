@@ -6,7 +6,7 @@
 #SBATCH --mem-per-cpu=1024
 #SBATCH --output=slurm_output.out
 #SBATCH --time=0-2:00:0
-#SBATCH --array=0-6%6
+#SBATCH --array=0-5%6
 
 
 
