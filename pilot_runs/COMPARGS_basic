@@ -1,8 +1,8 @@
--z 0.02
---critical-mass-ratio-prescription HURLEY_HJELLMING_WEBBINK
---mass-transfer-angular-momentum-loss-prescription JEANS 
---mass-transfer-thermal-limit-C 1
---common-envelope-lambda-prescription LAMBDA_FIXED
---common-envelope-lambda 1
---common-envelope-alpha 1
 --switch-log
+--critical-mass-ratio-prescription CLAEYS
+--mass-transfer-thermal-limit-C 10
+--common-envelope-lambda-prescription LAMBDA_FIXED
+--common-envelope-lambda 0.5
+--common-envelope-alpha 1
+-z 0.02
+--mass-loss-prescription HURLEY
