@@ -8,7 +8,8 @@
 #SBATCH --array=0-2
 
 
-mods=("basic" "basic1b" "intermediate")
+#mods=("basic" "basic1b" "intermediate")
+mods=("basic") 
 
 echo $SLURM_ARRAY_TASK_ID
 mod=${mods[$SLURM_ARRAY_TASK_ID]}
