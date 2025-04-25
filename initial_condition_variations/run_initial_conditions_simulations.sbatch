@@ -8,8 +8,6 @@
 #SBATCH --time=0-2:00:0
 #SBATCH --array=0-5%6
 
-
-
 names=("initial_MC_sample_ecc_thermal" "initial_MC_sample_ecc_uniform" "initial_MC_sample_fiducial" "initial_MC_sample_m2_min_05" "initial_MC_sample_porb_log_uniform" "initial_MC_sample_qmin_01")
 
 echo $SLURM_ARRAY_TASK_ID
