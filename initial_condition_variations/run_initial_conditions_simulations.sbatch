@@ -8,13 +8,17 @@
 #SBATCH --time=0-2:00:0
 #SBATCH --array=0-5%6
 
-names=("initial_MC_sample_ecc_thermal" "initial_MC_sample_ecc_uniform" "initial_MC_sample_fiducial" "initial_MC_sample_m2_min_05" "initial_MC_sample_porb_log_uniform" "initial_MC_sample_qmin_01")
+#names=("initial_MC_sample_ecc_thermal" "initial_MC_sample_ecc_uniform" "initial_MC_sample_fiducial" "initial_MC_sample_m2_min_05" "initial_MC_sample_porb_log_uniform" "initial_MC_sample_qmin_01")
+#
+#echo $SLURM_ARRAY_TASK_ID
+#name=${names[$SLURM_ARRAY_TASK_ID]}
+#echo $name
+#echo "comp_${name}"
+#
+##../data//
+## Choose small or large depending on needs
+##srun ./run_compas.sh small_grid_files/comp_${name}.txt initial_conditions_variations ${name}_small > logs/${name}.log
+##srun ./run_compas.sh large_grid_files/comp_${name}.txt initial_conditions_variations ${name} > logs/${name}.log
 
-echo $SLURM_ARRAY_TASK_ID
-name=${names[$SLURM_ARRAY_TASK_ID]}
-echo $name
-echo "comp_${name}"
 
-# Choose small or large depending on needs
-srun ./run_compas.sh small_grid_files/comp_${name}.txt IC_vars ${name}_small > logs/${name}.log
-#srun ./run_compas.sh large_grid_files/comp_${name}.txt IC_vars ${name} > logs/${name}.log
+srun ./run_compas.sh $SLURM_ARRAY_TASK_ID
