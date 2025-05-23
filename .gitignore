@@ -1,6 +1,6 @@
 troubleshooting
 data
-large_grid_files
+grid_files_large
 *.log
 *.h5
 *.out
